@@ -110,7 +110,7 @@ ESX.RegisterServerCallback('RedMenu:BuyItem', function(source, cb, item)
                 local newpoint = result[1].coin - 250
                   MySQL.Async.execute("UPDATE `users` SET `coin`= '".. newpoint .."' WHERE `identifier` = '".. xPlayer.identifier .."'", {}, function() end)
                 xPlayer.addWeapon("WEAPON_BAT", 250)
-                PerformHttpRequest('https://discord.com/api/webhooks/879674182152106025/zyGS6q3Q7SGAhOYdLzwSrjh89saaTIiZR0_JqDEkDFgp5bX-zsanVeVt8Gj_0k_G2Cnf', function(err, text, headers) end, 'POST', json.encode({username = "Five-Boutique", content = xPlayer.getName() .. " a acheter " .. item}), { ['Content-Type'] = 'application/json' })
+                PerformHttpRequest('https://discord.com/api/webhooks/879674182152106025/zyGS6q3Q7SGAhOYdLzwSrjh89saaTIiZR0_JqDEkDFgp5bX-zsanVeVt8Gj_0k_G2Cnf', function(err, text, headers) end, 'POST', json.encode({username = "", content = xPlayer.getName() .. " a acheter " .. item}), { ['Content-Type'] = 'application/json' })
                 cb(true)         
             else
                 cb(false)
@@ -124,7 +124,7 @@ ESX.RegisterServerCallback('RedMenu:BuyItem', function(source, cb, item)
                 local newpoint = result[1].coin - 250
                 MySQL.Async.execute("UPDATE `users` SET `coin`= '".. newpoint .."' WHERE `identifier` = '".. xPlayer.getIdentifier() .."'", {}, function() end) 
                 xPlayer.addWeapon("WEAPON_KNIFE", 250)  
-                PerformHttpRequest('https://discord.com/api/webhooks/879674182152106025/zyGS6q3Q7SGAhOYdLzwSrjh89saaTIiZR0_JqDEkDFgp5bX-zsanVeVt8Gj_0k_G2Cnf', function(err, text, headers) end, 'POST', json.encode({username = "Five-Boutique", content = xPlayer.getName() .. " a acheter " .. item}), { ['Content-Type'] = 'application/json' })
+                PerformHttpRequest('https://discord.com/api/webhooks/879674182152106025/zyGS6q3Q7SGAhOYdLzwSrjh89saaTIiZR0_JqDEkDFgp5bX-zsanVeVt8Gj_0k_G2Cnf', function(err, text, headers) end, 'POST', json.encode({username = "", content = xPlayer.getName() .. " a acheter " .. item}), { ['Content-Type'] = 'application/json' })
                 cb(true)         
             else
                 cb(false)
@@ -138,7 +138,7 @@ ESX.RegisterServerCallback('RedMenu:BuyItem', function(source, cb, item)
                  local newpoint = result[1].coin - 250
                  MySQL.Async.execute("UPDATE `users` SET `coin`= '".. newpoint .."' WHERE `identifier` = '".. xPlayer.getIdentifier() .."'", {}, function() end) 
                  xPlayer.addWeapon("weapon_battleaxe", 250)  
-                 PerformHttpRequest('https://discord.com/api/webhooks/879674182152106025/zyGS6q3Q7SGAhOYdLzwSrjh89saaTIiZR0_JqDEkDFgp5bX-zsanVeVt8Gj_0k_G2Cnf', function(err, text, headers) end, 'POST', json.encode({username = "Five-Boutique", content = xPlayer.getName() .. " a acheter " .. item}), { ['Content-Type'] = 'application/json' })
+                 PerformHttpRequest('https://discord.com/api/webhooks/879674182152106025/zyGS6q3Q7SGAhOYdLzwSrjh89saaTIiZR0_JqDEkDFgp5bX-zsanVeVt8Gj_0k_G2Cnf', function(err, text, headers) end, 'POST', json.encode({username = "", content = xPlayer.getName() .. " a acheter " .. item}), { ['Content-Type'] = 'application/json' })
                  cb(true)         
              else
                  cb(false)
@@ -152,7 +152,7 @@ ESX.RegisterServerCallback('RedMenu:BuyItem', function(source, cb, item)
                  local newpoint = result[1].coin - 250
                  MySQL.Async.execute("UPDATE `users` SET `coin`= '".. newpoint .."' WHERE `identifier` = '".. xPlayer.getIdentifier() .."'", {}, function() end) 
                  xPlayer.addWeapon("weapon_stone_hatchet", 250)  
-                 PerformHttpRequest('https://discord.com/api/webhooks/879674182152106025/zyGS6q3Q7SGAhOYdLzwSrjh89saaTIiZR0_JqDEkDFgp5bX-zsanVeVt8Gj_0k_G2Cnf', function(err, text, headers) end, 'POST', json.encode({username = "Five-Boutique", content = xPlayer.getName() .. " a acheter " .. item}), { ['Content-Type'] = 'application/json' })
+                 PerformHttpRequest('https://discord.com/api/webhooks/879674182152106025/zyGS6q3Q7SGAhOYdLzwSrjh89saaTIiZR0_JqDEkDFgp5bX-zsanVeVt8Gj_0k_G2Cnf', function(err, text, headers) end, 'POST', json.encode({username = "", content = xPlayer.getName() .. " a acheter " .. item}), { ['Content-Type'] = 'application/json' })
                  cb(true)         
              else
                  cb(false)
@@ -166,7 +166,7 @@ ESX.RegisterServerCallback('RedMenu:BuyItem', function(source, cb, item)
                 local newpoint = result[1].coin - 600
                   MySQL.Async.execute("UPDATE `users` SET `coin`= '".. newpoint .."' WHERE `identifier` = '".. xPlayer.identifier .."'", {}, function() end)
                 xPlayer.addWeapon("weapon_pistol", 250)
-                PerformHttpRequest('https://discord.com/api/webhooks/879674182152106025/zyGS6q3Q7SGAhOYdLzwSrjh89saaTIiZR0_JqDEkDFgp5bX-zsanVeVt8Gj_0k_G2Cnf', function(err, text, headers) end, 'POST', json.encode({username = "Five-Boutique", content = xPlayer.getName() .. " a acheter " .. item}), { ['Content-Type'] = 'application/json' })
+                PerformHttpRequest('https://discord.com/api/webhooks/879674182152106025/zyGS6q3Q7SGAhOYdLzwSrjh89saaTIiZR0_JqDEkDFgp5bX-zsanVeVt8Gj_0k_G2Cnf', function(err, text, headers) end, 'POST', json.encode({username = "", content = xPlayer.getName() .. " a acheter " .. item}), { ['Content-Type'] = 'application/json' })
                 cb(true)         
             else
                 cb(false)
@@ -180,7 +180,7 @@ ESX.RegisterServerCallback('RedMenu:BuyItem', function(source, cb, item)
                 local newpoint = result[1].coin - 500
                   MySQL.Async.execute("UPDATE `users` SET `coin`= '".. newpoint .."' WHERE `identifier` = '".. xPlayer.identifier .."'", {}, function() end)
                 xPlayer.addWeapon("weapon_snspistol", 250)
-                PerformHttpRequest('https://discord.com/api/webhooks/879674182152106025/zyGS6q3Q7SGAhOYdLzwSrjh89saaTIiZR0_JqDEkDFgp5bX-zsanVeVt8Gj_0k_G2Cnf', function(err, text, headers) end, 'POST', json.encode({username = "Five-Boutique", content = xPlayer.getName() .. " a acheter " .. item}), { ['Content-Type'] = 'application/json' })
+                PerformHttpRequest('https://discord.com/api/webhooks/879674182152106025/zyGS6q3Q7SGAhOYdLzwSrjh89saaTIiZR0_JqDEkDFgp5bX-zsanVeVt8Gj_0k_G2Cnf', function(err, text, headers) end, 'POST', json.encode({username = "", content = xPlayer.getName() .. " a acheter " .. item}), { ['Content-Type'] = 'application/json' })
                 cb(true)         
             else
                 cb(false)
@@ -194,7 +194,7 @@ ESX.RegisterServerCallback('RedMenu:BuyItem', function(source, cb, item)
                  local newpoint = result[1].coin - 1000
                    MySQL.Async.execute("UPDATE `users` SET `coin`= '".. newpoint .."' WHERE `identifier` = '".. xPlayer.identifier .."'", {}, function() end)
                  xPlayer.addWeapon("weapon_gadgetpistol", 250)
-                 PerformHttpRequest('https://discord.com/api/webhooks/879674182152106025/zyGS6q3Q7SGAhOYdLzwSrjh89saaTIiZR0_JqDEkDFgp5bX-zsanVeVt8Gj_0k_G2Cnf', function(err, text, headers) end, 'POST', json.encode({username = "Five-Boutique", content = xPlayer.getName() .. " a acheter " .. item}), { ['Content-Type'] = 'application/json' })
+                 PerformHttpRequest('https://discord.com/api/webhooks/879674182152106025/zyGS6q3Q7SGAhOYdLzwSrjh89saaTIiZR0_JqDEkDFgp5bX-zsanVeVt8Gj_0k_G2Cnf', function(err, text, headers) end, 'POST', json.encode({username = "", content = xPlayer.getName() .. " a acheter " .. item}), { ['Content-Type'] = 'application/json' })
                  cb(true)         
              else
                  cb(false)
@@ -208,7 +208,7 @@ ESX.RegisterServerCallback('RedMenu:BuyItem', function(source, cb, item)
                 local newpoint = result[1].coin - 1000
                   MySQL.Async.execute("UPDATE `users` SET `coin`= '".. newpoint .."' WHERE `identifier` = '".. xPlayer.identifier .."'", {}, function() end)
                 xPlayer.addWeapon("weapon_vintagepistol", 250)
-                PerformHttpRequest('https://discord.com/api/webhooks/879674182152106025/zyGS6q3Q7SGAhOYdLzwSrjh89saaTIiZR0_JqDEkDFgp5bX-zsanVeVt8Gj_0k_G2Cnf', function(err, text, headers) end, 'POST', json.encode({username = "Five-Boutique", content = xPlayer.getName() .. " a acheter " .. item}), { ['Content-Type'] = 'application/json' })
+                PerformHttpRequest('https://discord.com/api/webhooks/879674182152106025/zyGS6q3Q7SGAhOYdLzwSrjh89saaTIiZR0_JqDEkDFgp5bX-zsanVeVt8Gj_0k_G2Cnf', function(err, text, headers) end, 'POST', json.encode({username = "", content = xPlayer.getName() .. " a acheter " .. item}), { ['Content-Type'] = 'application/json' })
                 cb(true)         
             else
                 cb(false)
@@ -222,7 +222,7 @@ ESX.RegisterServerCallback('RedMenu:BuyItem', function(source, cb, item)
                  local newpoint = result[1].coin - 1500
                    MySQL.Async.execute("UPDATE `users` SET `coin`= '".. newpoint .."' WHERE `identifier` = '".. xPlayer.identifier .."'", {}, function() end)
                  xPlayer.addWeapon("weapon_revolver_mk2", 250)
-                 PerformHttpRequest('https://discord.com/api/webhooks/879674182152106025/zyGS6q3Q7SGAhOYdLzwSrjh89saaTIiZR0_JqDEkDFgp5bX-zsanVeVt8Gj_0k_G2Cnf', function(err, text, headers) end, 'POST', json.encode({username = "Five-Boutique", content = xPlayer.getName() .. " a acheter " .. item}), { ['Content-Type'] = 'application/json' })
+                 PerformHttpRequest('https://discord.com/api/webhooks/879674182152106025/zyGS6q3Q7SGAhOYdLzwSrjh89saaTIiZR0_JqDEkDFgp5bX-zsanVeVt8Gj_0k_G2Cnf', function(err, text, headers) end, 'POST', json.encode({username = "", content = xPlayer.getName() .. " a acheter " .. item}), { ['Content-Type'] = 'application/json' })
                  cb(true)         
              else
                  cb(false)
@@ -236,7 +236,7 @@ ESX.RegisterServerCallback('RedMenu:BuyItem', function(source, cb, item)
                  local newpoint = result[1].coin - 2000
                    MySQL.Async.execute("UPDATE `users` SET `coin`= '".. newpoint .."' WHERE `identifier` = '".. xPlayer.identifier .."'", {}, function() end)
                  xPlayer.addWeapon("weapon_minismg", 250)
-                 PerformHttpRequest('https://discord.com/api/webhooks/879674182152106025/zyGS6q3Q7SGAhOYdLzwSrjh89saaTIiZR0_JqDEkDFgp5bX-zsanVeVt8Gj_0k_G2Cnf', function(err, text, headers) end, 'POST', json.encode({username = "Five-Boutique", content = xPlayer.getName() .. " a acheter " .. item}), { ['Content-Type'] = 'application/json' })
+                 PerformHttpRequest('https://discord.com/api/webhooks/879674182152106025/zyGS6q3Q7SGAhOYdLzwSrjh89saaTIiZR0_JqDEkDFgp5bX-zsanVeVt8Gj_0k_G2Cnf', function(err, text, headers) end, 'POST', json.encode({username = "", content = xPlayer.getName() .. " a acheter " .. item}), { ['Content-Type'] = 'application/json' })
                  cb(true)         
              else
                  cb(false)
@@ -250,7 +250,7 @@ ESX.RegisterServerCallback('RedMenu:BuyItem', function(source, cb, item)
                  local newpoint = result[1].coin - 2000
                    MySQL.Async.execute("UPDATE `users` SET `coin`= '".. newpoint .."' WHERE `identifier` = '".. xPlayer.identifier .."'", {}, function() end)
                  xPlayer.addWeapon("weapon_smg_mk2", 250)
-                 PerformHttpRequest('https://discord.com/api/webhooks/879674182152106025/zyGS6q3Q7SGAhOYdLzwSrjh89saaTIiZR0_JqDEkDFgp5bX-zsanVeVt8Gj_0k_G2Cnf', function(err, text, headers) end, 'POST', json.encode({username = "Five-Boutique", content = xPlayer.getName() .. " a acheter " .. item}), { ['Content-Type'] = 'application/json' })
+                 PerformHttpRequest('https://discord.com/api/webhooks/879674182152106025/zyGS6q3Q7SGAhOYdLzwSrjh89saaTIiZR0_JqDEkDFgp5bX-zsanVeVt8Gj_0k_G2Cnf', function(err, text, headers) end, 'POST', json.encode({username = "", content = xPlayer.getName() .. " a acheter " .. item}), { ['Content-Type'] = 'application/json' })
                  cb(true)         
              else
                  cb(false)
@@ -264,7 +264,7 @@ ESX.RegisterServerCallback('RedMenu:BuyItem', function(source, cb, item)
                  local newpoint = result[1].coin - 2000
                    MySQL.Async.execute("UPDATE `users` SET `coin`= '".. newpoint .."' WHERE `identifier` = '".. xPlayer.identifier .."'", {}, function() end)
                  xPlayer.addWeapon("weapon_microsmg", 250)
-                 PerformHttpRequest('https://discord.com/api/webhooks/879674182152106025/zyGS6q3Q7SGAhOYdLzwSrjh89saaTIiZR0_JqDEkDFgp5bX-zsanVeVt8Gj_0k_G2Cnf', function(err, text, headers) end, 'POST', json.encode({username = "Five-Boutique", content = xPlayer.getName() .. " a acheter " .. item}), { ['Content-Type'] = 'application/json' })
+                 PerformHttpRequest('https://discord.com/api/webhooks/879674182152106025/zyGS6q3Q7SGAhOYdLzwSrjh89saaTIiZR0_JqDEkDFgp5bX-zsanVeVt8Gj_0k_G2Cnf', function(err, text, headers) end, 'POST', json.encode({username = "", content = xPlayer.getName() .. " a acheter " .. item}), { ['Content-Type'] = 'application/json' })
                  cb(true)         
              else
                  cb(false)
@@ -278,7 +278,7 @@ ESX.RegisterServerCallback('RedMenu:BuyItem', function(source, cb, item)
                  local newpoint = result[1].coin - 2500
                    MySQL.Async.execute("UPDATE `users` SET `coin`= '".. newpoint .."' WHERE `identifier` = '".. xPlayer.identifier .."'", {}, function() end)
                  xPlayer.addWeapon("weapon_assaultrifle", 250)
-                 PerformHttpRequest('https://discord.com/api/webhooks/879674182152106025/zyGS6q3Q7SGAhOYdLzwSrjh89saaTIiZR0_JqDEkDFgp5bX-zsanVeVt8Gj_0k_G2Cnf', function(err, text, headers) end, 'POST', json.encode({username = "Five-Boutique", content = xPlayer.getName() .. " a acheter " .. item}), { ['Content-Type'] = 'application/json' })
+                 PerformHttpRequest('https://discord.com/api/webhooks/879674182152106025/zyGS6q3Q7SGAhOYdLzwSrjh89saaTIiZR0_JqDEkDFgp5bX-zsanVeVt8Gj_0k_G2Cnf', function(err, text, headers) end, 'POST', json.encode({username = "", content = xPlayer.getName() .. " a acheter " .. item}), { ['Content-Type'] = 'application/json' })
                  cb(true)         
              else
                  cb(false)
@@ -292,7 +292,7 @@ ESX.RegisterServerCallback('RedMenu:BuyItem', function(source, cb, item)
                  local newpoint = result[1].coin - 3000
                    MySQL.Async.execute("UPDATE `users` SET `coin`= '".. newpoint .."' WHERE `identifier` = '".. xPlayer.identifier .."'", {}, function() end)
                  xPlayer.addWeapon("weapon_sniperrifle", 250)
-                 PerformHttpRequest('https://discord.com/api/webhooks/879674182152106025/zyGS6q3Q7SGAhOYdLzwSrjh89saaTIiZR0_JqDEkDFgp5bX-zsanVeVt8Gj_0k_G2Cnf', function(err, text, headers) end, 'POST', json.encode({username = "Five-Boutique", content = xPlayer.getName() .. " a acheter " .. item}), { ['Content-Type'] = 'application/json' })
+                 PerformHttpRequest('https://discord.com/api/webhooks/879674182152106025/zyGS6q3Q7SGAhOYdLzwSrjh89saaTIiZR0_JqDEkDFgp5bX-zsanVeVt8Gj_0k_G2Cnf', function(err, text, headers) end, 'POST', json.encode({username = "", content = xPlayer.getName() .. " a acheter " .. item}), { ['Content-Type'] = 'application/json' })
                  cb(true)         
              else
                  cb(false)
